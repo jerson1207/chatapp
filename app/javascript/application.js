@@ -3,7 +3,13 @@ import "@hotwired/turbo-rails"
 import "controllers"
 import '@doabit/semantic-ui-sass'
 
-$(document).on('turbolinks:load', function() {
-    $('.ui.dropdown').dropdown();
-})
-  
+// app/javascript/application.js
+
+// Import Semantic UI and jQuery
+import '@doabit/semantic-ui-sass'
+import 'jquery'
+
+// Initialize dropdowns when the document is ready
+document.addEventListener('DOMContentLoaded', () => {
+  $('.ui.dropdown').dropdown();
+});
